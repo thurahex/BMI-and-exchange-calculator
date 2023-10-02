@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<style>
+    body{
+        font-family: 'Russo One', sans-serif;
+    }
+</style>
+</head>
+<body class="">
+   <div class="flex justify-center gap-5 opacity-90">
+    <a href="index.html"><div class="py-3 opacity-100  border-b-4 px-3 border-[#75E6DA]">BMI</div></a>
+    <a href="exchange.html"><div class="py-3">Exchange</div>
+    </div></a>
+   </div>
+   
+    <div class="max-w-[600px] mx-auto bg-[#75E6DA]">
+    
+        <div class="w-full bg-[] p-5 text-white text-[14px]">
+        <h1 class="text-white text-[30px] mb-5">BMI Calculator</h1>
+
+
+            <div class="flex py-3 justify-between">
+                <div>
+                    <a href="" class="active">
+                        <button class="text-[12px] text-[#75E6DA] p-2 bg-[white]">Us Units</button>
+    
+                    </a>
+                    <a href="" class="active">
+                        <button class="text-[12px] text-[#75E6DA] p-2 bg-[white]">Metric Unit</button>
+    
+                    </a>
+                </div>
+                <div class="flex h-full items-center">
+                    <span class="text-[18px]" id="result"> 20 (NORMAL)</span>
+                </div>
+                
+            </div>
+            <div class="flex  flex-col gap-5">
+                <div class="">
+                    <label for="age">Age</label>
+                    <input  class="max-w-[100px] h-[30px] px-2" type="text" name="" id="age" placeholder="1-100(optional)">
+                </div>
+                <div class="flex gap-4" >
+                    <input  type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">Male </label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">Female</label><br>
+
+                </div>
+                <div>
+                    <label for="h">Height</label>
+                    <input type="text" class="max-w-[100px] h-[30px] px-2 text-black" name="" placeholder="ft" id="ft">
+                    <input class="max-w-[100px] h-[30px] px-2 text-black" type="text" name="" placeholder="inch" id="in">
+
+
+                </div>
+                <div>
+                    <label for="w">Weight</label>
+                    <input class="max-w-[100px] h-[30px] px-2 text-black" type="text" name="" placeholder="pounds" id="w">
+                </div>
+
+
+        </div>
+        <div class="w-full mt-5">
+            <button class="p-2 w-full bg-[#05445E] text-[16px] opacity-75 hover:opacity-100 hover:scale-95 transition-all " onclick="cal()">Calculate</button>
+        </div>
+        <p class="text-white text-[12px] text-center pt-10">@thurahex</p>
+    
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

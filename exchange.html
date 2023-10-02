@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Russo One', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="flex justify-center gap-5 opacity-90">
+
+        <a href="index.html">
+            <div class="py-3">BMI</div>
+        </a>
+        <a href="exchange.html">
+            <div class="py-3 opacity-100  border-b-4 px-3 border-[#75E6DA]">Exchange</div>
+    </div></a>
+
+
+    <div class="max-w-[600px] mx-auto bg-[#75E6DA] p-2">
+
+        <div class="w-full bg-[] p-5 text-white text-[14px]">
+            <h1 class="text-white text-[30px] mb-5">Exchange</h1>
+
+
+            <div>
+
+                <div class="flex justify-between">
+
+
+
+                    <select class="py-2 px-2 text-black     " name="" id="from">
+                        <option class="" value="usd">USD</option>
+                        <option class="" value="mmk">MMK</option>
+                        <option class="" value="sgd">SGD</option>
+
+                    </select>
+                    <div>
+                        <input class="py-3 px-2  text-black" type="text" id="x" placeholder="amount">
+                    </div>
+                    <select class="py-2 px-2 text-black     " name="" id="to">
+                        
+                        <option class="" value="usd">USD</option>
+                        <option class="" value="mmk">MMK</option>
+                        <option class="" value="sgd">SGD</option>
+
+                    </select>
+
+                </div>
+                <div class="w-full py-5 text-center ">
+                    <div class="text-[40px]">
+                        <span id="Xresult">10000</span>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </div>
+        <div class="w-full mt-2">
+            <button
+                class="p-2 text-white w-full bg-[#05445E] text-[16px] opacity-75 hover:opacity-100 hover:scale-95 transition-all "
+                onclick="go()">Calculate</button>
+        </div>
+    <p class="text-white text-[12px] text-center pt-10">@thurahex</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
